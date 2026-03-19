@@ -18,6 +18,5 @@ public class Question1 {
 
         percent = (num2 / num1) * 100;
         System.out.println(num2 + " is " + percent + "% of " + num1);
-
     }
 }
