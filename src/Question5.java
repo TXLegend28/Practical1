@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BankAccount {
+public class Question5 {
     
     
     public String accountNumber;
@@ -8,7 +8,7 @@ public class BankAccount {
     public double balance;
     
 
-    public BankAccount() {
+    public Question5() {
         accountNumber = "00000000";
         ownerName = "Unknown";
         balance = 0.0;
@@ -53,22 +53,22 @@ public class BankAccount {
 
     public static void main(String[] args) {
         
-        Scanner keyboard = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         
    
-        BankAccount account = new BankAccount();
+        Question5 account = new Question5();
         
 
         System.out.print("Enter account number: ");
-        String accNum = keyboard.nextLine();
+        String accNum = scanner.nextLine();
         account.setAccountNumber(accNum);
         
         System.out.print("Enter account owner's name: ");
-        String name = keyboard.nextLine();
+        String name = scanner.nextLine();
         account.setOwnerName(name);
         
         System.out.print("Enter initial balance (ZAR): ");
-        double initialBalance = keyboard.nextDouble();
+        double initialBalance = scanner.nextDouble();
         account.setBalance(initialBalance);
         
       
@@ -86,6 +86,6 @@ public class BankAccount {
       
         System.out.println("Balance after monthly fee: ZAR " + account.getBalance());
         
-        keyboard.close();
+        scanner.close();
     }
 }
