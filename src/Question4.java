@@ -12,13 +12,12 @@ public class Question4 {
     }
     
     public static double getInvestmentAmount() {
-        Scanner keyboard = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         double value;
       
         System.out.print("Enter starting investment amount: ZAR ");
-        value = keyboard.nextDouble();
-        
-        keyboard.close();
+        value = scanner.nextDouble();
+
         return value;
     }
 }
