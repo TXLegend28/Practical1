@@ -7,7 +7,7 @@ public class Question2 {
 
         int age;
         int decade;
-        int premium;
+        double premium;
         int currentYear;
         int birthYear;
 
@@ -16,14 +16,16 @@ public class Question2 {
         currentYear = scanner.nextInt();
 
         System.out.print("Enter birth year: ");
-         birthYear = scanner.nextInt();
+        birthYear = scanner.nextInt();
+
 
         age = currentYear - birthYear;
-        decade = age / 10;
-        premium = (decade + 15) * 20;
+        premium = calculatePremium(age);
 
-        System.out.println("Your annual premium is ZAR " + premium);
-
-        scanner.close();
+        System.out.printf("Your annual premium is ZAR %.2f%n", premium);
     }
-}
+        public static double calculatePremium(int age) {
+          int decade = age / 10;
+            return (decade + 15) * 20.0;
+        }
+    }

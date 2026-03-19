@@ -14,34 +14,42 @@ public class Question5 {
         balance = 0.0;
     }
     
-  
-    public String getAccountNumber() {
-        return accountNumber;
-    }
-    
-    public String getOwnerName() {
-        return ownerName;
-    }
-    
-    public double getBalance() {
-        return balance;
-    }
-    
+
   
     public void setAccountNumber(String number) {
+
         accountNumber = number;
     }
     
     public void setOwnerName(String name) {
+
         ownerName = name;
     }
     
     public void setBalance(double amount) {
+
         balance = amount;
     }
-    
-  
+
+
+    public String getAccountNumber() {
+
+        return accountNumber;
+    }
+
+    public String getOwnerName() {
+
+        return ownerName;
+    }
+
+    public double getBalance() {
+
+        return balance;
+    }
+
+
     public void deductMonthlyFee() {
+
         balance = balance - 8.00;
     }
     

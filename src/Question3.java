@@ -22,10 +22,10 @@ public class Question3 {
     }
     
     public static double calculateSalary(double rate, double regular, double overtime) {
-        double normalPay, otPay;
+        double normalPay, overtPay;
         
         normalPay = regular * rate;
-        otPay = overtime * rate * 1.5;
-        return normalPay + otPay;
+        overtPay = overtime * rate * 1.5;
+        return normalPay + overtPay;
     }
 }
