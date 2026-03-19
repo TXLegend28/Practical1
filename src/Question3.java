@@ -9,7 +9,7 @@ public class Question3 {
         double overtimeHours;
         double normalPay;
         double overtimePay;
-        double totalSalary:
+        double totalSalary;
         
         System.out.print("Enter hourly pay rate: ");
         rate = scanner.nextDouble();
@@ -30,7 +30,6 @@ public class Question3 {
         totalSalary = normalPay + overtimePay;
         
         System.out.println("Weekly salary = ZAR " + totalSalary);
-        
-        scanner.close();
+
     }
 }
