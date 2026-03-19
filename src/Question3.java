@@ -3,17 +3,17 @@ import java.util.Scanner;
 public class Question3 {
     public static void main(String[] args) {
         
-        Scanner keyboard = new Scanner(System.in);
-        double rate, regular, overtime, double total;
+        Scanner scanner = new Scanner(System.in);
+        double rate, regular, overtime, total;
             
         System.out.print("Enter hourly pay rate: ");
-        rate = keyboard.nextDouble();
+        rate = scanner.nextDouble();
         
         System.out.print("Enter regular hours: ");
-        regular = keyboard.nextDouble();
+        regular = scanner.nextDouble();
         
         System.out.print("Enter overtime hours: ");
-        overtime = keyboard.nextDouble();
+        overtime = scanner.nextDouble();
         
         total = calculateSalary(rate, regular, overtime);
         
