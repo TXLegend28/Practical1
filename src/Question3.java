@@ -2,34 +2,30 @@ import java.util.Scanner;
 
 public class Question3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-      
-        double rate;
-        double regularHours;
-        double overtimeHours;
-        double normalPay;
-        double overtimePay;
-        double totalSalary;
         
+        Scanner keyboard = new Scanner(System.in);
+        double rate, regular, overtime, double total;
+            
         System.out.print("Enter hourly pay rate: ");
-        rate = scanner.nextDouble();
+        rate = keyboard.nextDouble();
         
         System.out.print("Enter regular hours: ");
-        regularHours = scanner.nextDouble();
+        regular = keyboard.nextDouble();
         
         System.out.print("Enter overtime hours: ");
-        overtimeHours = scanner.nextDouble();
+        overtime = keyboard.nextDouble();
         
-        // Calculate normal pay
-        normalPay = regularHours * rate;
+        total = calculateSalary(rate, regular, overtime);
         
-        // Calculate overtime pay (1.5 times the rate)
-        overtimePay = overtimeHours * rate * 1.5;
+        System.out.println("Weekly salary = ZAR " + total);
         
-        // Total salary
-        totalSalary = normalPay + overtimePay;
+    }
+    
+    public static double calculateSalary(double rate, double regular, double overtime) {
+        double normalPay, otPay;
         
-        System.out.println("Weekly salary = ZAR " + totalSalary);
-
+        normalPay = regular * rate;
+        otPay = overtime * rate * 1.5;
+        return normalPay + otPay;
     }
 }
